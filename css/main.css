@@ -16,14 +16,14 @@
 html
 body
 {
+    overflow-x: hidden;
+
     width: 100%;
     margin: 0;
     padding: 0;
 
     background: #292638 url('../images/bg-header.jpg') no-repeat top center;
     background-size: 100%;
-
-    overflow-x:hidden;
 }
 
 /* TYPOGRAPHY */
@@ -982,9 +982,10 @@ section#contact h1
     .col-xl-9,
     .col-xl-auto
     {
+        float: none;
+
         width: 100%;
         padding: 0;
-        float:none;
     }
 
     /* EVENTS */
@@ -1022,6 +1023,12 @@ section#contact h1
     .description
     {
         text-align: center;
+    }
+
+    .description.pull-right,
+    .description.pull-left
+    {
+        padding: 0;
     }
 
     .speaker-item.active .desc
@@ -1098,8 +1105,9 @@ section#contact h1
 
 @media (max-width:767px)
 {
-    .container {
-        width:90%;
+    .container
+    {
+        width: 90%;
         margin: auto;
     }
 
@@ -1198,114 +1206,6 @@ section#contact h1
     h4
     {
         font-size: 2rem;
-    }
-
-    /* EVENTS */
-
-    .events
-    {
-        width: 85%;
-        margin: 0 auto;
-    }
-
-    /* SPEAKERS */
-
-    section#speakers
-    {
-        padding: 0 15px;
-    }
-
-    .speaker-item
-    {
-        max-width: 435px;
-        height: 550px;
-        margin: 0 auto;
-    }
-
-    .speaker-photo
-    {
-        height: 300px;
-    }
-    .speaker-descrition
-    {
-        height: 250px;
-        margin: 0 auto;
-    }
-
-    .description
-    {
-        text-align: center;
-    }
-
-    .speaker-item.active .desc
-    {
-        margin: 45px auto 0;
-    }
-
-    .speaker-item.active
-    {
-        height: 900px;
-
-        background: #fff;
-    }
-
-    .speaker-item.active .speaker-photo,
-    .speaker-item.active .speaker-descrition
-    {
-        height: 500px;
-    }
-
-    .speaker-item .blur,
-    .speaker-item .color-mask
-    {
-        display: none;
-    }
-
-    .speaker-item.active .blur,
-    .speaker-item.active .color-mask
-    {
-        height: 1000px;
-
-        background: #fff;
-    }
-
-    .pull-left,
-    .pull-right
-    {
-        float: none;
-    }
-
-    #speaker2 .speaker-description,
-    #speaker4 .speaker-description
-    {
-        text-align: left;
-    }
-
-    .speaker-open
-    {
-        margin: 50px auto 0;
-    }
-
-    .speaker-item.active .speaker-close
-    {
-        display: block;
-        float: right !important;
-
-        margin-right: 30px;
-    }
-
-    /* CONTACT */
-
-    label.accept
-    {
-        width: 100%;
-        max-width: 435px;
-        margin: 5px auto;
-    }
-
-    textarea
-    {
-        max-width: 435px;
     }
 }
 
